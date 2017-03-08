@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3771E628EB173FD4A3DC4D4A /* Pods_XCGLogger_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D2D61EDC5CE60CFD85C19F /* Pods_XCGLogger_Demo.framework */; };
 		4BD43D141E6FA2A200522243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD43D131E6FA2A200522243 /* AppDelegate.swift */; };
 		4BD43D161E6FA2A200522243 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD43D151E6FA2A200522243 /* ViewController.swift */; };
 		4BD43D191E6FA2A200522243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BD43D171E6FA2A200522243 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29F1791BF434705499C30660 /* Pods-XCGLogger_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCGLogger_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XCGLogger_Demo/Pods-XCGLogger_Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		429A2BAD41F3F1795B7BE531 /* Pods-XCGLogger_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCGLogger_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XCGLogger_Demo/Pods-XCGLogger_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		4BD43D101E6FA2A200522243 /* XCGLogger_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCGLogger_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD43D131E6FA2A200522243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BD43D151E6FA2A200522243 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		4BD43D2F1E6FA2A300522243 /* XCGLogger_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCGLogger_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD43D331E6FA2A300522243 /* XCGLogger_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCGLogger_DemoUITests.swift; sourceTree = "<group>"; };
 		4BD43D351E6FA2A300522243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D2D61EDC5CE60CFD85C19F /* Pods_XCGLogger_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XCGLogger_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3771E628EB173FD4A3DC4D4A /* Pods_XCGLogger_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AB32A413B49A6FAAF301D28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29F1791BF434705499C30660 /* Pods-XCGLogger_Demo.debug.xcconfig */,
+				429A2BAD41F3F1795B7BE531 /* Pods-XCGLogger_Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4BD43D071E6FA2A200522243 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				4BD43D271E6FA2A200522243 /* XCGLogger_DemoTests */,
 				4BD43D321E6FA2A300522243 /* XCGLogger_DemoUITests */,
 				4BD43D111E6FA2A200522243 /* Products */,
+				2AB32A413B49A6FAAF301D28 /* Pods */,
+				98EAC411CEC6A0AFB10AD060 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = XCGLogger_DemoUITests;
 			sourceTree = "<group>";
 		};
+		98EAC411CEC6A0AFB10AD060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98D2D61EDC5CE60CFD85C19F /* Pods_XCGLogger_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BD43D381E6FA2A300522243 /* Build configuration list for PBXNativeTarget "XCGLogger_Demo" */;
 			buildPhases = (
+				4B40901372D4FAB493E6C1FA /* [CP] Check Pods Manifest.lock */,
 				4BD43D0C1E6FA2A200522243 /* Sources */,
 				4BD43D0D1E6FA2A200522243 /* Frameworks */,
 				4BD43D0E1E6FA2A200522243 /* Resources */,
+				2D2DCC044B02884CE38439B4 /* [CP] Embed Pods Frameworks */,
+				E5EC18CFF0F83661BF44764A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D2DCC044B02884CE38439B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XCGLogger_Demo/Pods-XCGLogger_Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B40901372D4FAB493E6C1FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5EC18CFF0F83661BF44764A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XCGLogger_Demo/Pods-XCGLogger_Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4BD43D0C1E6FA2A200522243 /* Sources */ = {
@@ -408,6 +483,7 @@
 		};
 		4BD43D391E6FA2A300522243 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29F1791BF434705499C30660 /* Pods-XCGLogger_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XCGLogger_Demo/Info.plist;
@@ -420,6 +496,7 @@
 		};
 		4BD43D3A1E6FA2A300522243 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 429A2BAD41F3F1795B7BE531 /* Pods-XCGLogger_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XCGLogger_Demo/Info.plist;
@@ -503,6 +580,7 @@
 				4BD43D3A1E6FA2A300522243 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BD43D3B1E6FA2A300522243 /* Build configuration list for PBXNativeTarget "XCGLogger_DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +589,7 @@
 				4BD43D3D1E6FA2A300522243 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BD43D3E1E6FA2A300522243 /* Build configuration list for PBXNativeTarget "XCGLogger_DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +598,7 @@
 				4BD43D401E6FA2A300522243 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
