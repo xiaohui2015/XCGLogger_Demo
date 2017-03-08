@@ -20,7 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        log.setup(level: .debug, showThreadName: true, showLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: "/Users/xiaohui/Desktop/XCGLoggerTest/XCGLoggerTestFile", fileLevel: .debug)
+//        log.setup(level: .debug, showThreadName: true, showLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: "/Users/xiaohui/Desktop/XCGLoggerTest/XCGLoggerTestFile", fileLevel: .debug)
+        
+        
+        //日志文件地址
+        let cachePath = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0]
+        
+        let logURL = cachePath.appendingPathComponent("log.txt")
+        
+        //日志对象设置
+        log.setup(level: .debug, showLogIdentifier: true, showFunctionName: true, showThreadName: true, showLevel: true, showFileNames: true, showLineNumbers: true, showDate: true, writeToFile: logURL, fileLevel: .debug)
         
         return true
     }
